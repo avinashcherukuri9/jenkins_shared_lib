@@ -6,7 +6,7 @@ def call(String project, String ImageTag, String hubUser){
     )]) {
 
       
-        def curlCommand = "curl -X PUT -u '${USER}:${PASS}' -T target/*.jar ${params.artifactoryURL}/artifactory/example-repo-local/"
+        def curlCommand = "curl -u '${USER}:${PASS}' -T target/*.jar ${params.artifactoryURL}/artifactory/example-repo-local/"
         echo "Executing curl command : $curlCommand"
         sh curlCommand
     }
