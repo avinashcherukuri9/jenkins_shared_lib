@@ -1,4 +1,4 @@
-def call(String project, String ImageTag, String JfrogUser){
+/*def call(String project, String ImageTag, String JfrogUser){
     withCredentials([usernamePassword(
             credentialsId: "artifactory",
             usernameVariable: "USER",
@@ -12,4 +12,4 @@ def call(String project, String ImageTag, String JfrogUser){
         sh curlCommand
     }
       
-}
+} */
