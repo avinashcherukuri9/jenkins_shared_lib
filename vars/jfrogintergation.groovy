@@ -1,8 +1,8 @@
 def call(String project, String ImageTag, String hubUser){
     withCredentials([usernamePassword(
             credentialsId: "artifactory",
-            usernameVariable: "USER",
-            passwordVariable: "PASS"
+            usernameVariable: "admin",
+            passwordVariable: "@vinAsh994"
     )]) {
 
       
